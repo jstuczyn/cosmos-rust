@@ -249,6 +249,13 @@ pub mod ibc {
             }
         }
 
+        /// IBC ports.
+        pub mod port {
+            pub mod v1 {
+                include!("prost/ibc.core.port.v1.rs");
+            }
+        }
+
         /// IBC types.
         pub mod types {
             pub mod v1 {
